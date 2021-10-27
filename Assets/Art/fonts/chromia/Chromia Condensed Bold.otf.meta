@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: 7b49ca8376e819c4287ed2c3b4eedfe2
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Chromia Condensed
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: fa3f19f3986cd4a49bed3afe9d81c5ec, type: 3}
+  - {fileID: 12800000, guid: 33cac6afc17e3804587a43881893bd68, type: 3}
+  - {fileID: 12800000, guid: 0632db4a29e80774aae52680a6b4ef7e, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

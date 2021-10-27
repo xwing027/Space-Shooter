@@ -7,11 +7,6 @@ public class PlayerControls : MonoBehaviour
     public float speed;
     public GameObject bullet;
 
-    void Start()
-    {
-        
-    }
-
     void Update()
     {
         Vector3 movement;

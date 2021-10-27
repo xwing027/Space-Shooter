@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 4a1aaa7d19c6c104990b8e0c25905bef
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Chromia
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: e07cac60bc429cd4789edf7c9959d5d6, type: 3}
+  - {fileID: 12800000, guid: 3809eae7e3aecc94bb7f34607ac7da3a, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
