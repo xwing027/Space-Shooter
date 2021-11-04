@@ -14,7 +14,16 @@ public class PointsHandler : MonoBehaviour
 
     public void AstPoints()
     {
-        Debug.Log("+10");
         totalPoints += 10;
+    }
+
+    public void E1Points()
+    {
+        totalPoints += 20;
+    }
+
+    public void E2Points()
+    {
+        totalPoints += 40;
     }
 }

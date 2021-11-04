@@ -5,11 +5,11 @@ using UnityEngine;
 public class ObstacleCollision : MonoBehaviour
 {
     //public bool isAsteroid = false;
-    public PointsHandler pointsManager;
+    public PointsHandler pointsHandler;
 
     public void Start()
     {
-        pointsManager = GameObject.Find("Points Manager").GetComponent<PointsHandler>();
+        pointsHandler = GameObject.Find("Points Handler").GetComponent<PointsHandler>();
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -25,7 +25,15 @@ public class ObstacleCollision : MonoBehaviour
             Destroy(gameObject);
             if (gameObject.tag =="Asteroid")
             {
-                pointsManager.AstPoints();
+                pointsHandler.AstPoints();
+            }
+            if (gameObject.tag == "Enemy1")
+            {
+                pointsHandler.E1Points();
+            }
+            if (gameObject.tag == "Enemy2")
+            {
+                pointsHandler.E2Points();
             }
         }
 
