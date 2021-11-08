@@ -8,6 +8,8 @@ TagManager:
   - Asteroid
   - Enemy1
   - Enemy2
+  - Powerup1
+  - PlayerInvun
   layers:
   - Default
   - TransparentFX

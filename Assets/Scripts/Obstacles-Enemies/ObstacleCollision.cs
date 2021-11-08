@@ -6,10 +6,14 @@ public class ObstacleCollision : MonoBehaviour
 {
     //public bool isAsteroid = false;
     public PointsHandler pointsHandler;
+    LivesManager livesHandler;
+    public Vector3 startPos;
 
     public void Start()
     {
+        startPos.Set(0, 0, -1.36f);
         pointsHandler = GameObject.Find("Points Handler").GetComponent<PointsHandler>();
+        livesHandler = GameObject.Find("Lives Manager").GetComponent<LivesManager>();
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -40,8 +44,9 @@ public class ObstacleCollision : MonoBehaviour
         //are we touching the player
         else if (collision.gameObject.tag == "Player")
         {
-            //destroy player
-            Destroy(collision.gameObject);
+            collision.gameObject.transform.position = startPos; //reset position to starting position
+            LivesManager.lives--; //take away a life
+            livesHandler.isInvulnerable = true;
         }
     }
 }

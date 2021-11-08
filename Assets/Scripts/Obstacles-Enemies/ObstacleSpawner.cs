@@ -15,15 +15,15 @@ public class ObstacleSpawner : MonoBehaviour
 
     void Start()
     {
-        InvokeRepeating("AstSpawn",.2f,.2f);
-        InvokeRepeating("E1Spawn", 3f, .7f);
-        InvokeRepeating("E2Spawn", 5f, .7f);
+        InvokeRepeating("AstSpawn",.2f,.1f); //start spawning asteroids straight away
+        InvokeRepeating("E1Spawn", 3f, .8f); //enemy 1 starts spawning
+        InvokeRepeating("E2Spawn", 5f, 2f); //enemy 2 starts spawning
     }
 
     void AstSpawn()
     {
-        spawnPos = Vector3.Lerp(pointA.position, pointB.position, Random.Range(0f, 1f));
-        Instantiate(asteroid, spawnPos, Quaternion.identity);
+        spawnPos = Vector3.Lerp(pointA.position, pointB.position, Random.Range(0f, 1f)); //spawn randomly between point a and b
+        Instantiate(asteroid, spawnPos, Quaternion.identity); //spawn
     }
 
     void E1Spawn()

@@ -27,8 +27,6 @@ public class PlayerControls : MonoBehaviour
             Instantiate(bullet,transform.position,transform.rotation);
         }
 
-        //can get killed by enemy
-
         //clamp players position to inside the play field
         Vector3 clampPos = transform.position;
         clampPos.x = Mathf.Clamp(clampPos.x,-13,13);
